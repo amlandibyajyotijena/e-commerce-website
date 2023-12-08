@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,41 +10,33 @@
             margin: 40px;
             line-height: 1.6;
         }
-
         header {
             background-color: #333;
             color: #fff;
             padding: 10px;
             text-align: center;
         }
-
         section {
             margin-top: 20px;
         }
-
         h1 {
             color: #333;
         }
-
         p {
             color: #555;
         }
-
         code {
             background-color: #eee;
             padding: 2px 4px;
             border-radius: 4px;
         }
-
         ul {
             list-style-type: none;
             padding: 0;
         }
-
         li {
             margin-bottom: 10px;
         }
-
         footer {
             margin-top: 40px;
             text-align: center;
@@ -55,11 +46,9 @@
 </head>
 
 <body>
-
     <header>
         <h1>E-Commerce Web Application</h1>
     </header>
-
     <section>
         <h2>Features</h2>
         <ul>
@@ -71,7 +60,6 @@
             <li><strong>Order History:</strong> View a history of past orders.</li>
         </ul>
     </section>
-
     <section>
         <h2>Technologies Used</h2>
         <p>
@@ -81,7 +69,6 @@
             <strong>MySQL:</strong> Database for storing user, product, cart, and order information.
         </p>
     </section>
-
     <section>
         <h2>Project Structure</h2>
         <ul>
@@ -92,7 +79,7 @@
         </ul>
     </section>
 
-    <section>
+ <section>
         <h2>Setup</h2>
         <ol>
             <li><strong>Database Configuration:</strong>
@@ -110,7 +97,6 @@
             </li>
         </ol>
     </section>
-
     <section>
         <h2>How to Contribute</h2>
         <p>
