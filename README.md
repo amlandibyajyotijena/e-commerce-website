@@ -1,44 +1,124 @@
-E-Commerce Web Application
-It is a simple web application for online shopping that allows users to browse products, add items to their cart, and place orders.
+<!DOCTYPE html>
+<html lang="en">
 
-Features
-User Authentication: Users can create accounts, log in, and log out.
-Product Catalog: Browse a catalog of products with details such as name, category, price, and discounts.
-Shopping Cart: Add products to the shopping cart for future purchase.
-Quantity Management: Easily increase or decrease the quantity of items in the cart.
-Checkout: Place orders for the items in the cart.
-Order History: View a history of past orders.
-Technologies Used
-Java: Backend development using Java programming language.
-Servlets and JSP: Server-side processing and dynamic web page generation.
-Hibernate: Object-relational mapping for database interactions.
-MySQL: Database for storing user, product, cart, and order information.
-Project Structure
-src: Contains Java source code.
-com.mycart.dao: Data Access Objects for database operations.
-com.mycart.entities: Entity classes representing database tables.
-com.mycart.helper: Helper classes for setting up Hibernate.
-com.mycart.servlets: Servlets for handling HTTP requests.
-WebContent: Contains web resources such as JSP files, CSS, and JS.
-hibernate.cfg.xml: Hibernate configuration file.
-pom.xml: Maven project configuration file.
-Setup
-Database Configuration:
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCart Web Application</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
 
-Set up a MySQL database and update the database configuration in hibernate.cfg.xml.
-Execute the SQL scripts in the database-scripts folder to create the necessary tables.
-Maven Dependencies:
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
 
-This project uses Maven for dependency management. Ensure Maven is installed, and run mvn clean install to download the required dependencies.
-Run the Application:
+        section {
+            margin-top: 20px;
+        }
 
-Deploy the application on a servlet container (e.g., Apache Tomcat).
-Access the application at http://localhost:8080/ecommerce_website.
-How to Contribute
-Contributions to enhance and improve the E-Commerce web application are welcome.
-Follow these steps:
-Fork the repository.
-Create a new branch (git checkout -b feature/improvement).
-Make changes and commit (git commit -m 'Add new feature').
-Push to the branch (git push origin feature/improvement).
-Create a pull request.
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>E-Commerce Web Application</h1>
+    </header>
+
+    <section>
+        <h2>Features</h2>
+        <ul>
+            <li><strong>User Authentication:</strong> Users can create accounts, log in, and log out.</li>
+            <li><strong>Product Catalog:</strong> Browse a catalog of products with details such as name, category, price, and discounts.</li>
+            <li><strong>Shopping Cart:</strong> Add products to the shopping cart for future purchase.</li>
+            <li><strong>Quantity Management:</strong> Easily increase or decrease the quantity of items in the cart.</li>
+            <li><strong>Checkout:</strong> Place orders for the items in the cart.</li>
+            <li><strong>Order History:</strong> View a history of past orders.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Technologies Used</h2>
+        <p>
+            <strong>Java:</strong> Backend development using Java programming language.<br>
+            <strong>Servlets and JSP:</strong> Server-side processing and dynamic web page generation.<br>
+            <strong>Hibernate:</strong> Object-relational mapping for database interactions.<br>
+            <strong>MySQL:</strong> Database for storing user, product, cart, and order information.
+        </p>
+    </section>
+
+    <section>
+        <h2>Project Structure</h2>
+        <ul>
+            <li><code>src:</code> Contains Java source code.</li>
+            <li><code>WebContent:</code> Contains web resources such as JSP files, CSS, and JS.</li>
+            <li><code>hibernate.cfg.xml:</code> Hibernate configuration file.</li>
+            <li><code>pom.xml:</code> Maven project configuration file.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Setup</h2>
+        <ol>
+            <li><strong>Database Configuration:</strong>
+                <ul>
+                    <li>Set up a MySQL database and update the database configuration in <code>hibernate.cfg.xml</code>.</li>
+                    <li>Execute the SQL scripts in the <code>database-scripts</code> folder to create the necessary tables.</li>
+                </ul>
+            </li>
+            <li><strong>Maven Dependencies:</strong> This project uses Maven for dependency management. Ensure Maven is installed, and run <code>mvn clean install</code> to download the required dependencies.</li>
+            <li><strong>Run the Application:</strong>
+                <ul>
+                    <li>Deploy the application on a servlet container (e.g., Apache Tomcat).</li>
+                    <li>Access the application at <code>http://localhost:8080/ecommerce_website</code>.</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>How to Contribute</h2>
+        <p>
+            Contributions to enhance and improve the E-Commerce web application are welcome. Follow these steps:
+        </p>
+        <ol>
+            <li>Fork the repository.</li>
+            <li>Create a new branch (<code>git checkout -b feature/improvement</code>).</li>
+            <li>Make changes and commit (<code>git commit -m 'Add new feature'</code>).</li>
+            <li>Push to the branch (<code>git push origin feature/improvement</code>).</li>
+           
